@@ -18,8 +18,8 @@ def toroidal_score(df, cols):
 def detect_toroidal_nodes(
     df,
     cols,
-    vel_eps=1e-4,
-    acc_eps=1e-5,
+    vel_eps=5e-4,
+    acc_eps=5e-5,
     min_amp=1e-6
 ):
     mask = pd.Series(True, index=df.index)
